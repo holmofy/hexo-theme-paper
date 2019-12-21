@@ -1,5 +1,8 @@
 {
   "name": "hexo-theme-landscape",
   "version": "0.0.2",
-  "private": true
+  "private": true,
+  "peerDependencies": {
+    "chai": "^0.1.0"
+  }
 }
