@@ -78,10 +78,11 @@
     border-bottom: 1px solid color-border
     padding: 10px 0
   blockquote
-    font-family: font-serif
-    font-size: 1.4em
-    margin: line-height 20px
-    text-align: center
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: .1em 10px .1em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
     footer
       font-size: font-size
       margin: line-height 0
@@ -174,16 +175,10 @@
     padding-right: 6px
 
 #article-nav
-  clearfix()
-  position: relative
+  display: flex
+  justify-content: space-between
   @media mq-normal
     margin: block-margin 0
-    &:before
-      absolute-center(8px)
-      content: ""
-      border-radius: 50%
-      background: color-border
-      box-shadow: 0 1px 2px #fff
 
 .article-nav-link-wrap
   text-decoration: none
@@ -201,14 +196,12 @@
 
 #article-nav-newer
   @media mq-normal
-    float: left
-    text-align: right
+    text-align: left
     padding-right: 20px
 
 #article-nav-older
   @media mq-normal
-    float: right
-    text-align: left
+    text-align: right
     padding-left: 20px
 
 .article-nav-caption

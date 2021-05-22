@@ -1,7 +1,9 @@
 # Header
 menu:
-  Home: /
+  Home: //www.hufeifei.cn
+  Blog: /
   Archives: /archives
+  Github: https://github.com/holmofy
 rss: /atom.xml
 banner: "images/banner.jpg"
 
@@ -18,6 +20,14 @@ widgets:
 - tagcloud
 - archive
 - recent_posts
+
+footer:
+  since: 2016
+  power_by: true
+  beian: 
+    enable: true
+    icp: 赣ICP备17009276号
+
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
@@ -49,3 +59,12 @@ valine:
   lang: zh-cn # i18n: zh-cn/en
   placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
   guest_info: nick,mail,link #valine comment header info
+
+vendors: 
+  # FancyBox
+  jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
+  fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js
+  fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
+  #jquery:
+  #fancybox:
+  #fancybox_css

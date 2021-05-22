@@ -1,7 +1,22 @@
 {
-  "name": "hexo-theme-landscape",
-  "version": "0.0.2",
-  "private": true,
+  "name": "hexo-theme-paper",
+  "version": "0.0.1",
+  "author": "holmofy <hu1996723@163.com>",
+  "license": "MIT",
+  "description": "A theme as simple as paper for Hexo",
+  "keywords": [
+    "hexo",
+    "theme",
+    "paper"
+  ],
+  "homepage": "https://github.com/holmofy/hexo-theme-paper",
+  "repository": "https://github.com/holmofy/hexo-theme-paper.git",
+  "bugs": {
+    "url": "https://github.com/holmofy/hexo-theme-paper/issues"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js --ext .jsx --ext .json ."
+  },
   "peerDependencies": {
     "chai": "^0.1.0"
   }

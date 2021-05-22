@@ -6,14 +6,23 @@ const { cacheComponent } = require('../util/cache');
 class Footer extends Component {
     render() {
         const { config, theme, date, __ } = this.props;
+        const { footer } = theme;
         return <footer id="footer">
             {theme.sidebar === 'bottom' ? <Sidebar {...this.props} /> : null}
             <div className="outer">
                 <div id="footer-info" className="inner">
-                    <span dangerouslySetInnerHTML={{
-                        __html: `&copy;${date(new Date(), 'YYYY')} ${config.author || config.title} ${__('powered_by')} `
-                    }}></span>
-                    <a href="http://hexo.io/" target="_blank">Hexo</a>
+                    <p>
+                        {footer.beian.enable ? <a href="https://beian.miit.gov.cn/" target="_blank">{footer.beian.icp}</a> : null}
+                        &copy;{footer.since} ~ {date(new Date(), 'YYYY')}
+                        &nbsp;{config.author || config.title}
+                    </p>
+                    {footer.power_by ? <p>
+                        {__('powered_by')}
+                        &nbsp;<a href="http://hexo.io/" target="_blank">Hexo</a>
+                        &nbsp;&gt;&nbsp;
+                        {__('theme_by')}
+                        &nbsp;<a href="https://github.com/holmofy/hexo-theme-paper">paper</a>
+                    </p> : null}
                 </div>
             </div>
         </footer>;

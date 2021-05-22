@@ -31,7 +31,6 @@ module.exports = class extends Component {
                     </header> : null}
                     <div className="article-entry" itemprop="articleBody" dangerouslySetInnerHTML={{ __html: excerpt || post.content }}></div>
                     <footer className="article-footer">
-                        <a data-url={post.permalink} data-id={post._id} className="article-share-link">{__('share')}</a>
                         {post.comments && config.disqus_shortname ? <a href={post.permalink + '#disqus_thread'} className="article-comment-link">{__('comment')}</a> : null}
                         <Tag {...this.props} />
                     </footer>

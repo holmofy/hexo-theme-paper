@@ -8,16 +8,7 @@ class Header extends Component {
 
         return (
             <header id="header">
-                <div id="banner"></div>
                 <div id="header-outer" className="outer">
-                    <div id="header-title" className="inner">
-                        <h1 id="logo-wrap">
-                            <a href={url_for()} id="logo">{config.title}</a>
-                        </h1>
-                        {theme.subtitle ? <h2 id="subtitle-wrap">
-                            <a href={url_for()} id="subtitle">{theme.subtitle}</a>
-                        </h2> : null}
-                    </div>
                     <div id="header-inner" className="inner">
                         <nav id="main-nav">
                             <a id="main-nav-toggle" className="nav-icon"></a>

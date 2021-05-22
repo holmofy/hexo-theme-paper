@@ -48,7 +48,6 @@ module.exports = class extends Component {
                 })
             }}></nav>
         }
-
         return <Fragment>
             {content}
             {nav}
