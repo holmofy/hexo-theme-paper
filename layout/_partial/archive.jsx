@@ -38,12 +38,14 @@ module.exports = class extends Component {
 
         let nav;
         if (page.total > 1) {
-            const prev_text = '&laquo; ' + __('prev');
-            const next_text = __('next') + ' &raquo;';
+            const prev_text = '<i class="fas fa-angle-left"></i>&nbsp;' + __('prev');
+            const next_text = __('next') + '&nbsp;<i class="fas fa-angle-right"></i>';
             nav = <nav id="page-nav" dangerouslySetInnerHTML={{
                 __html: paginator({
                     prev_text: prev_text,
                     next_text: next_text,
+                    end_size: 1,
+                    mid_size: 2,
                     escape: false
                 })
             }}></nav>
