@@ -13,11 +13,11 @@ module.exports = class extends Component {
                 <div className="article-nav-title">
                     {prev.title ? prev.title : '(no title)'}
                 </div>
-            </a> : null}
+            </a> : <span id="article-nav-newer" className="article-nav-link-wrap" />}
             {next ? <a href={url_for(next.path)} id="article-nav-older" className="article-nav-link-wrap">
                 <strong className="article-nav-caption">{__('older')}</strong>
                 <div className="article-nav-title">{next.title}</div>
-            </a> : null}
+            </a> : <span id="article-nav-older" className="article-nav-link-wrap" />}
         </nav>;
     }
 }

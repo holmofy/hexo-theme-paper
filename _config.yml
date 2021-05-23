@@ -5,7 +5,6 @@ menu:
   Archives: /archives
   Github: https://github.com/holmofy
 rss: /atom.xml
-banner: "images/banner.jpg"
 
 # Content
 excerpt_link: Read More
@@ -42,10 +41,21 @@ show_count: false
 # Miscellaneous
 google_analytics:
 gauges_analytics:
-favicon: /favicon.png
+favicon: //www.hufeifei.cn/favicon.jpg
 twitter:
 fb_admins:
 fb_app_id:
+
+leancloud_visitors:
+  enable: true
+  app_id: k4h2NOzejej3AQBaWv37YuSJ-gzGzoHsz
+  app_key: RjLaLuXtqwJ6OArmcdYse9rk
+  # Required for apps from CN region
+  server_url: # <your server url>
+  # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
+  # If you don't care about security in leancloud counter and just want to use it directly
+  # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
+  security: false
 
 # valine comment system. https://valine.js.org
 valine:
@@ -68,3 +78,8 @@ vendors:
   #jquery:
   #fancybox:
   #fancybox_css
+
+  # FontAwesome
+  # fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css
+  fontawesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
+  #fontawesome:

@@ -13,13 +13,14 @@ class Footer extends Component {
                 <div id="footer-info" className="inner">
                     <p>
                         {footer.beian.enable ? <a href="https://beian.miit.gov.cn/" target="_blank">{footer.beian.icp}</a> : null}
-                        &copy;{footer.since} ~ {date(new Date(), 'YYYY')}
+                        <i class="far fa-copyright"></i>
+                        {footer.since} ~ {date(new Date(), 'YYYY')}
                         &nbsp;{config.author || config.title}
                     </p>
                     {footer.power_by ? <p>
                         {__('powered_by')}
                         &nbsp;<a href="http://hexo.io/" target="_blank">Hexo</a>
-                        &nbsp;&gt;&nbsp;
+                        <i class="fas fa-angle-right"></i>
                         {__('theme_by')}
                         &nbsp;<a href="https://github.com/holmofy/hexo-theme-paper">paper</a>
                     </p> : null}

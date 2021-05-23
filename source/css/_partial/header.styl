@@ -5,19 +5,19 @@
   border-bottom: 1px solid color-border
 
 #header-inner
-  height: 100%
+  display: flex
+  justify-content: space-between
   position: relative
   height: banner-height
 
 #main-nav
-  float: left
-  margin-left: -15p
+  display: flex
   height: banner-height
   line-height: banner-height
 
 $nav-link
-  float: left
   opacity: 0.6
+  color: color-default
   font-size: banner-font-size
   text-decoration: none
   text-shadow: 0 1px rgba(0, 0, 0, 0.2)
@@ -29,11 +29,7 @@ $nav-link
 
 .nav-icon
   @extend $nav-link
-  font-family: font-icon
   text-align: center
-  width: banner-font-size
-  height: banner-font-size
-  position: relative
   cursor: pointer
 
 .main-nav-link
@@ -45,24 +41,13 @@ $nav-link
 
 #main-nav-toggle
   display: none
-  &:before
-    content: "\f0c9"
   @media mq-mobile
     display: block
 
 #sub-nav
-  float: right
-  margin-right: -15px
+  display: flex
   height: banner-height
   line-height: banner-height
-
-#nav-rss-link
-  &:before
-    content: "\f09e"
-
-#nav-search-btn
-  &:before
-    content: "\f002"
 
 #search-form-wrap
   position: absolute
@@ -105,7 +90,7 @@ $nav-link
   top: 50%
   right: 10px
   margin-top: -7px
-  font: 13px font-icon
+  font-size: 13px
   border: none
   background: none
   color: #bbb

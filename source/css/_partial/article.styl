@@ -165,15 +165,6 @@
     font-family: font-icon
     padding-right: 8px
 
-.article-share-link
-  cursor: pointer
-  float: right
-  margin-left: 20px
-  &:before
-    content: "\f064"
-    font-family: font-icon
-    padding-right: 6px
-
 #article-nav
   display: flex
   justify-content: space-between
@@ -242,59 +233,7 @@
   border-radius: 3px 3px 0 0
   height: 36px
   line-height: 36px
-
-.article-share-links
-  clearfix()
-  background: color-background
-
-$article-share-link
-  width: 50px
-  height: 36px
-  display: block
-  float: left
-  position: relative
-  color: #999
-  text-shadow: 0 1px #fff
-  &:before
-    font-size: 20px
-    font-family: font-icon
-    absolute-center(@font-size)
-    text-align: center
-  &:hover
-    color: #fff
-
-.article-share-twitter
-  @extend $article-share-link
-  &:before
-    content: "\f099"
-  &:hover
-    background: color-twitter
-    text-shadow: 0 1px darken(color-twitter, 20%)
-
-.article-share-facebook
-  @extend $article-share-link
-  &:before
-    content: "\f09a"
-  &:hover
-    background: color-facebook
-    text-shadow: 0 1px darken(color-facebook, 20%)
-
-.article-share-pinterest
-  @extend $article-share-link
-  &:before
-    content: "\f0d2"
-  &:hover
-    background: color-pinterest
-    text-shadow: 0 1px darken(color-pinterest, 20%)
-
-.article-share-linkedin
-  @extend $article-share-link
-  &:before
-    content: "\f0e1"
-  &:hover
-    background: color-linkedin
-    text-shadow: 0 1px darken(color-linkedin, 20%)
-
+  
 .article-gallery
   background: #000
   position: relative

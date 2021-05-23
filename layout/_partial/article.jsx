@@ -29,9 +29,14 @@ module.exports = class extends Component {
                     {post.link || post.title ? <header className="article-header">
                         <Title {...this.props} className='article-title' />
                     </header> : null}
+                    <div>
+                        {/** TODO: views */}
+                        {post.comments && config.disqus_shortname ? <a href={post.permalink + '#disqus_thread'} className="article-comment-link">
+                            {__('comment')}
+                        </a> : null}
+                    </div>
                     <div className="article-entry" itemprop="articleBody" dangerouslySetInnerHTML={{ __html: excerpt || post.content }}></div>
                     <footer className="article-footer">
-                        {post.comments && config.disqus_shortname ? <a href={post.permalink + '#disqus_thread'} className="article-comment-link">{__('comment')}</a> : null}
                         <Tag {...this.props} />
                     </footer>
                 </div>

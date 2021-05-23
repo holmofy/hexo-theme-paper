@@ -11,16 +11,16 @@ class Header extends Component {
                 <div id="header-outer" className="outer">
                     <div id="header-inner" className="inner">
                         <nav id="main-nav">
-                            <a id="main-nav-toggle" className="nav-icon"></a>
+                            <a id="main-nav-toggle" className="nav-icon"><i class="fas fa-bars"></i></a>
                             {Object.keys(theme.menu).map(i => {
                                 return <a className="main-nav-link" href={url_for(theme.menu[i])}>{i}</a>
                             })}
                         </nav>
                         <nav id="sub-nav">
-                            {theme.rss ? <a id="nav-rss-link" className="nav-icon" href={url_for(theme.rss)} title={__('rss_feed')}></a> : null}
-                            <a id="nav-search-btn" className="nav-icon" title={__('search')}></a>
+                            {theme.rss ? <a id="nav-rss-link" className="nav-icon" href={url_for(theme.rss)} title={__('rss_feed')}><i class="fa fa-rss" /></a> : null}
+                            <a id="nav-search-btn" className="nav-icon" title={__('search')}><i class="fas fa-search" /></a>
                         </nav>
-                        <div id="search-form-wrap" dangerouslySetInnerHTML={{ __html: search_form({ button: '&#xF002;' }) }}>
+                        <div id="search-form-wrap" dangerouslySetInnerHTML={{ __html: search_form({ button: '<i class="fas fa-search"></i>' }) }}>
                         </div>
                     </div>
                 </div>
