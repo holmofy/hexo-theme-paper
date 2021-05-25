@@ -23,18 +23,16 @@ module.exports = class extends Component {
                 <div className="article-meta">
                     <Date {...this.props} className='article-date' date_format={null} />
                     <Category {...this.props} />
+                    <div id={url_for(post.path)} class="article-views leancloud_visitors" data-flag-title={post.title} title={__('post.views')}>
+                        <i class="fas fa-eye"></i>
+                        <span class="leancloud-visitors-count"></span>
+                    </div>
                 </div>
                 <div className="article-inner">
                     <Gallery {...this.props} />
                     {post.link || post.title ? <header className="article-header">
                         <Title {...this.props} className='article-title' />
                     </header> : null}
-                    <div>
-                        {/** TODO: views */}
-                        {post.comments && config.disqus_shortname ? <a href={post.permalink + '#disqus_thread'} className="article-comment-link">
-                            {__('comment')}
-                        </a> : null}
-                    </div>
                     <div className="article-entry" itemprop="articleBody" dangerouslySetInnerHTML={{ __html: excerpt || post.content }}></div>
                     <footer className="article-footer">
                         <Tag {...this.props} />
@@ -42,11 +40,9 @@ module.exports = class extends Component {
                 </div>
                 {!index ? <Nav {...this.props} /> : null}
             </article>
-            {!index && post.comments && config.disqus_shortname ? <section id="comments">
-                <div id="disqus_thread">
-                    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                </div>
-            </section> : null}
+            {!index && theme.valine.enable ? <Fragment>
+                <div id="valine-comments"></div>
+            </Fragment> : null}
         </Fragment>
     }
 }

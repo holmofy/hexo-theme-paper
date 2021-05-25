@@ -6,24 +6,31 @@
   overflow: hidden
 
 .article-meta
-  clearfix()
+  display: flex
+  height: 30px
+  line-height: 30px
 
 .article-date
   @extend $block-caption
-  float: left
 
 .article-category
-  float: left
   line-height: 1em
-  color: #ccc
-  text-shadow: 0 1px #fff
   margin-left: 8px
   &:before
+    color: #ccc
     content: "\2022"
 
 .article-category-link
   @extend $block-caption
   margin: 0 12px 1em
+
+.article-views
+  @extend $block-caption
+  &:before
+    color: #ccc
+    content: "\2022"
+  .fas
+    margin: 0 5px 0 8px
 
 .article-header
   padding: article-padding article-padding 0

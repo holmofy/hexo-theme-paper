@@ -66,6 +66,7 @@ module.exports = class extends Component {
             {theme.rss ? <link rel="alternate" href={url_for(theme.rss)} title={config.title} type="application/atom+xml" /> : null}
             {theme.favicon ? <link rel="icon" href={theme.favicon} /> : null}
             {config.highlight.enable ? <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css" /> : null}
+            {theme.valine.enable ? <script src={theme.vendors.valine}></script> : null}
             <link rel="stylesheet" href={theme.vendors.fontawesome} rel="stylesheet" type="text/css" />
             <link rel="stylesheet" href={url_for('/css/style.css')} />
         </head>;

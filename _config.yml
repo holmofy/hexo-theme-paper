@@ -46,29 +46,18 @@ twitter:
 fb_admins:
 fb_app_id:
 
-leancloud_visitors:
-  enable: true
-  app_id: k4h2NOzejej3AQBaWv37YuSJ-gzGzoHsz
-  app_key: RjLaLuXtqwJ6OArmcdYse9rk
-  # Required for apps from CN region
-  server_url: # <your server url>
-  # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
-  # If you don't care about security in leancloud counter and just want to use it directly
-  # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
-  security: false
-
 # valine comment system. https://valine.js.org
 valine:
-  enable: false # if you want use valine,please set this value is true
-  appId:  # leancloud application app id
-  appKey:  # leancloud application app key
+  enable: true
+  appId: k4h2NOzejej3AQBaWv37YuSJ-gzGzoHsz
+  appKey: RjLaLuXtqwJ6OArmcdYse9rk 
   notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
   verify: false # valine verify code (true/false)
   pageSize: 10 # comment list page size
   avatar: mm # gravatar style https://valine.js.org/#/avatar
   lang: zh-cn # i18n: zh-cn/en
   placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
-  guest_info: nick,mail,link #valine comment header info
+  visitor: true
 
 vendors: 
   # FancyBox
@@ -83,3 +72,6 @@ vendors:
   # fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css
   fontawesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
   #fontawesome:
+
+  # valine
+  valine: //unpkg.com/valine/dist/Valine.min.js
