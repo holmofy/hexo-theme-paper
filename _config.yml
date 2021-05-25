@@ -64,14 +64,9 @@ vendors:
   jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
   fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js
   fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
-  #jquery:
-  #fancybox:
-  #fancybox_css
 
   # FontAwesome
-  # fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css
-  fontawesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
-  #fontawesome:
+  fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css
 
   # valine
-  valine: //unpkg.com/valine/dist/Valine.min.js
+  valine: //cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js
