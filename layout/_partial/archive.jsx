@@ -17,8 +17,8 @@ module.exports = class extends Component {
             let posts = [];
             page.posts.each((post, i) => {
                 const year = post.date.year();
-                if (i === page.posts.length - 1 || (last !== year && last !== null)) {
-                    if (i === page.posts.length - 1) {
+                if (i === page.posts.length - 1 || (last !== year && last !== null)) { // 将前一年的所有post组成一个section
+                    if (i === page.posts.length - 1) { // 最后一篇文章
                         posts.push(<ArchivePost {...this.props} post={post} even={i % 2 === 0} />);
                     }
                     content.push(<section className="archives-wrap">
