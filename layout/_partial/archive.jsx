@@ -17,21 +17,24 @@ module.exports = class extends Component {
             let posts = [];
             page.posts.each((post, i) => {
                 const year = post.date.year();
-                if (i === page.posts.length - 1 || (last !== year && last !== null)) { // 将前一年的所有post组成一个section
-                    if (i === page.posts.length - 1) { // 最后一篇文章
-                        posts.push(<ArchivePost {...this.props} post={post} even={i % 2 === 0} />);
-                    }
+                if (last !== year && last !== null) { // 将一年的所有post组成一个section
                     content.push(<section className="archives-wrap">
                         <div className="archive-year-wrap">
-                            <a href={url_for(config.archive_dir + '/' + year)} className="archive-year">{year}</a>
+                            <a href={url_for(config.archive_dir + '/' + last)} className="archive-year">{last}</a>
                         </div>
                         <div className="archives">{posts}</div>
                     </section>);
                     posts = [];
                 }
                 last = year;
-                if (i < page.posts.length - 1) {
-                    posts.push(<ArchivePost {...this.props} post={post} even={i % 2 === 0} />);
+                posts.push(<ArchivePost {...this.props} post={post} even={i % 2 === 0} />);
+                if (i === page.posts.length - 1) { // 最后一篇文章
+                    content.push(<section className="archives-wrap">
+                        <div className="archive-year-wrap">
+                            <a href={url_for(config.archive_dir + '/' + last)} className="archive-year">{last}</a>
+                        </div>
+                        <div className="archives">{posts}</div>
+                    </section>);
                 }
             });
         }
