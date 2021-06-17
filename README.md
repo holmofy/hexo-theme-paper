@@ -1,6 +1,6 @@
 # Paper
 
-A theme as simple as paper for Hexo. Based on [landspace](https://github.com/hexojs/hexo-theme-landscape) theme and [hellscape](https://github.com/ppoffice/hexo-theme-hellscape). [online demo](blog.hufeifei.cn).
+A theme as simple as paper for Hexo. Based on [landspace](https://github.com/hexojs/hexo-theme-landscape) theme and [hellscape](https://github.com/ppoffice/hexo-theme-hellscape). [online demo](https://blog.hufeifei.cn).
 
 ## Installation
 
