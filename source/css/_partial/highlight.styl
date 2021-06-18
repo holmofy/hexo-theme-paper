@@ -16,9 +16,7 @@ $code-block
   background: highlight-background
   margin: 0 article-padding * -1
   padding: 15px article-padding
-  border-style: solid
-  border-color: color-border
-  border-width: 1px 0
+  border: none; 
   overflow: auto
   color: highlight-foreground
   line-height: font-size * line-height
@@ -106,7 +104,15 @@ $line-numbers
           font-weight: normal
           &:hover
             text-decoration: underline
-
+  .codeblock--tabbed
+    .tabs
+      .tab
+        border-radius: 4px 4px 0 0
+        padding: 4px 16px
+      .tab.active
+        background: highlight-background
+        color: highlight-foreground
+        padding: 4px 20px
 pre
   .comment
   .title

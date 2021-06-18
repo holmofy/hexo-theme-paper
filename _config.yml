@@ -3,7 +3,7 @@ menu:
   Home: //www.hufeifei.cn
   Blog: /
   Archives: /archives
-  Github: https://github.com/holmofy
+  Github: /github
 rss: /atom.xml
 
 # Content
@@ -17,7 +17,7 @@ widgets:
 - category
 - tag
 - tagcloud
-- archive
+# - archive
 - recent_posts
 
 footer:

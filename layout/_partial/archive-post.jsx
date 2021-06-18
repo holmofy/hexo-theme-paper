@@ -9,7 +9,7 @@ module.exports = class extends Component {
         return <article className={`archive-article archive-type-${layout}`}>
             <div className="archive-article-inner">
                 <header className="archive-article-header">
-                    <Date {...this.props} className='archive-article-date' date_format='MM-D' />
+                    <Date {...this.props} className='archive-article-date' date_format='MM-DD' />
                     <Title {...this.props} className='archive-article-title' />
                 </header>
             </div>
