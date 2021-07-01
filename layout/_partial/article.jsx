@@ -38,11 +38,15 @@ module.exports = class extends Component {
                         <Tag {...this.props} />
                     </footer>
                 </div>
+                {!index && theme.reward.enable ? <div id="article-reward">
+                    <i class="iconfont ic-money">
+                        <div>{theme.reward.pay_img.map(imgUrl => (<img src={imgUrl} />))}</div>
+                    </i>
+                    <div>鼓励一下</div>
+                </div> : null}
                 {!index ? <Nav {...this.props} /> : null}
             </article>
-            {!index && theme.valine.enable ? <Fragment>
-                <div id="valine-comments"></div>
-            </Fragment> : null}
+            {!index && theme.valine.enable ? <div id="valine-comments"></div> : null}
         </Fragment>
     }
 }

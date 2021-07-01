@@ -59,6 +59,12 @@ valine:
   placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
   visitor: true
 
+reward: 
+  enable: true
+  pay_img: 
+    - https://www.hufeifei.cn/reward-img/alipay.jpg
+    - https://www.hufeifei.cn/reward-img/wechat.jpg
+
 vendors: 
   # FancyBox
   jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
@@ -70,3 +76,6 @@ vendors:
 
   # valine
   valine: //cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js
+
+  other_css:
+    - //at.alicdn.com/t/font_841402_efkj8jo1xld.css
