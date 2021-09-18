@@ -18,5 +18,5 @@ Modify `theme` setting in `_config.yml` to `paper`.
 ``` diff
 _config.yml
 - theme: some-theme
-+ theme: hellscape
++ theme: paper
 ```
