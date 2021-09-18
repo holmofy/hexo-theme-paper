@@ -14,11 +14,14 @@ recent_posts_limits: 5
 # Sidebar
 sidebar: right
 widgets:
+- wechat
 - category
 - tag
 - tagcloud
 # - archive
 - recent_posts
+
+wechat: //www.hufeifei.cn/wechat-public-account.jpg
 
 footer:
   since: 2016

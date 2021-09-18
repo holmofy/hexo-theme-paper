@@ -282,17 +282,20 @@
     font-size: 20px
     &:hover
       color: #ffca00
-      div
-        display: flex
-    div 
-      position: absolute
-      left: -25vw
-      width: 50vw
-      display: none
-      z-index: 1
-      box-shadow: 2px 2px color-border
-      img
-        width: 50%
+  div.img
+    width: 100%
+    max-width: 600px
+    margin: 0 auto
+    display: none
+    justify-content: center
+    z-index: 1
+    box-shadow: 2px 2px 4px 2px border-color;
+    img
+      width: 50%
+      max-width: 300px
+  &:hover
+    div.img
+      display: flex
 
   
 /*

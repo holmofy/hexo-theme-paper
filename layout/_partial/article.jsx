@@ -39,10 +39,9 @@ module.exports = class extends Component {
                     </footer>
                 </div>
                 {!index && theme.reward.enable ? <div id="article-reward">
-                    <i class="iconfont ic-money">
-                        <div>{theme.reward.pay_img.map(imgUrl => (<img src={imgUrl} />))}</div>
-                    </i>
+                    <i class="iconfont ic-money"></i>
                     <div>鼓励一下</div>
+                    <div class="img">{theme.reward.pay_img.map(imgUrl => (<img src={imgUrl} />))}</div>
                 </div> : null}
                 {!index ? <Nav {...this.props} /> : null}
             </article>
