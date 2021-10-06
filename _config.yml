@@ -16,7 +16,7 @@ sidebar: right
 widgets:
 - wechat
 - category
-- tag
+#- tag
 - tagcloud
 # - archive
 - recent_posts
@@ -61,6 +61,11 @@ valine:
   lang: zh-cn # i18n: zh-cn/en
   placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
   visitor: true
+
+google_ads:
+  enable: true
+  ad_client: ca-pub-7111912103882824
+  js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
 
 reward: 
   enable: true
