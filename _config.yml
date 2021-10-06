@@ -61,6 +61,7 @@ valine:
   lang: zh-cn # i18n: zh-cn/en
   placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
   visitor: true
+  requiredFields: ['mail']
 
 google_ads:
   enable: true
@@ -69,9 +70,8 @@ google_ads:
 
 reward: 
   enable: true
-  pay_img: 
-    - https://www.hufeifei.cn/reward-img/alipay.jpg
-    - https://www.hufeifei.cn/reward-img/wechat.jpg
+  alipay: https://www.hufeifei.cn/reward-img/alipay.jpg
+  wechat: https://www.hufeifei.cn/reward-img/wechat.jpg
 
 vendors: 
   # FancyBox

@@ -151,6 +151,10 @@
     text-decoration: none
     text-shadow: 0 1px darken(color-link, 20%)
 
+.article-copyright
+  padding: 20px
+  color: lightgrey
+  
 .article-footer
   clearfix()
   font-size: 0.85em
@@ -277,26 +281,21 @@
   margin: 10px 0
   color: color-default
   i.iconfont
-    color: #ebe5ce
-    position: relative
     font-size: 20px
-    &:hover
-      color: #ffca00
-  div.img
+    color: #ffca00
+  table
+    margin: 10px auto 0
     width: 100%
-    max-width: 600px
-    margin: 0 auto
-    display: none
-    justify-content: center
-    z-index: 1
-    box-shadow: 2px 2px 4px 2px border-color;
-    img
-      width: 50%
-      max-width: 300px
-  &:hover
-    div.img
-      display: flex
-
+    th,td
+      border: 1px solid color-border
+      border-left: 0
+      border-right: 0
+      padding: 10px
+    td
+      background: white
+      img
+        width: 150px
+        height: 150px
   
 /*
 $article-gallery-ctrl

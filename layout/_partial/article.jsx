@@ -34,6 +34,7 @@ module.exports = class extends Component {
                         <Title {...this.props} className='article-title' />
                     </header> : null}
                     <div className="article-entry" itemprop="articleBody" dangerouslySetInnerHTML={{ __html: excerpt || post.content }}></div>
+                    {!index ? <p className="article-copyright">文章转载请注明出处：{config.url + url_for(post.path)}</p> : null}
                     <footer className="article-footer">
                         <Tag {...this.props} />
                     </footer>
@@ -41,7 +42,20 @@ module.exports = class extends Component {
                 {!index && theme.reward.enable ? <div id="article-reward">
                     <i class="iconfont ic-money"></i>
                     <div>鼓励一下</div>
-                    <div class="img">{theme.reward.pay_img.map(imgUrl => (<img src={imgUrl} />))}</div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="text-align:center">支付宝</th>
+                                <th style="text-align:center">微信</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="text-align:center"><img width="150" src={theme.reward.alipay} /></td>
+                                <td style="text-align:center"><img width="135" src={theme.reward.wechat} /></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div> : null}
                 {!index ? <Nav {...this.props} /> : null}
             </article>
