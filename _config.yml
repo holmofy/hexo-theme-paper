@@ -61,7 +61,8 @@ valine:
   lang: zh-cn # i18n: zh-cn/en
   placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
   visitor: true
-  requiredFields: ['mail']
+  recordIP: true
+  requiredFields: ['nick']
 
 google_ads:
   enable: true
