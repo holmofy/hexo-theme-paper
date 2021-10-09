@@ -62,7 +62,7 @@ module.exports = class extends Component {
                 googlePlus={theme.google_plus}
                 facebookAdmins={theme.fb_admins}
                 facebookAppId={theme.fb_app_id} />
-            {theme.google_ads.enable ? <script data-ad-client={theme.google_ads.ad_client} async src={theme.google_ads.js}></script> : null}
+            {theme.google_ads.enable ? <script data-ad-client={theme.google_ads.ad_client} async src={theme.google_ads.js} crossorigin="anonymous"></script> : null}
             {theme.rss ? <link rel="alternate" href={url_for(theme.rss)} title={config.title} type="application/atom+xml" /> : null}
             {theme.favicon ? <link rel="icon" href={theme.favicon} /> : null}
             {config.highlight.enable ? <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css" /> : null}
