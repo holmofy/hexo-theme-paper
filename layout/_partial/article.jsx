@@ -34,7 +34,10 @@ module.exports = class extends Component {
                         <Title {...this.props} className='article-title' />
                     </header> : null}
                     <div className="article-entry" itemprop="articleBody" dangerouslySetInnerHTML={{ __html: excerpt || post.content }}></div>
-                    {!index ? <p className="article-copyright">文章转载请注明出处：{config.url + url_for(post.path)}</p> : null}
+                    {!index ? <div className="article-copyright">
+                        <p>本作品采用 <a href="https://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a> 进行许可。 </p>
+                        <p>转载时请注明<a href={config.url + url_for(post.path)}>原文链接</a>：{config.url + url_for(post.path)}</p>
+                    </div> : null}
                     <footer className="article-footer">
                         <Tag {...this.props} />
                     </footer>
