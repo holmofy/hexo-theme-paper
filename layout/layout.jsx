@@ -15,6 +15,9 @@ module.exports = class extends Component {
             <html lang="en">
                 <Head {...this.props} />
                 <body>
+                    <amp-auto-ads type="adsense"
+                        data-ad-client="ca-pub-7111912103882824">
+                    </amp-auto-ads>
                     <div id="container">
                         <div id="wrap">
                             <Header {...this.props} />

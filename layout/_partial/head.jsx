@@ -43,7 +43,7 @@ module.exports = class extends Component {
             <GoogleAnalytics {...this.props} />
             <title>{(title ? title + ' | ' : '') + config.title}</title>
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-
+            <meta name="baidu_union_verify" content="b7d27ec946758934fcdf3c5c26386237" />
             <OpenGraph
                 type={is_post() ? 'article' : 'website'}
                 title={page.title || config.title}
@@ -62,7 +62,10 @@ module.exports = class extends Component {
                 googlePlus={theme.google_plus}
                 facebookAdmins={theme.fb_admins}
                 facebookAppId={theme.fb_app_id} />
-            {theme.google_ads.enable ? <script data-ad-client={theme.google_ads.ad_client} async src={theme.google_ads.js} crossorigin="anonymous"></script> : null}
+            {theme.google_ads.enable ? <Fragment>
+                <script data-ad-client={theme.google_ads.ad_client} async src={theme.google_ads.js} crossorigin="anonymous"></script>
+                <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+            </Fragment> : null}
             {theme.rss ? <link rel="alternate" href={url_for(theme.rss)} title={config.title} type="application/atom+xml" /> : null}
             {theme.favicon ? <link rel="icon" href={theme.favicon} /> : null}
             {config.highlight.enable ? <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css" /> : null}
