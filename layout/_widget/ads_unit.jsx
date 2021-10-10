@@ -15,8 +15,10 @@ module.exports = class extends Component {
         </script>
         `;
         return (
-            <div className="widget-wrap"
-                dangerouslySetInnerHTML={{ __html: ads_unit_html }}>
+            <div className="widget-wrap">
+                <h3 className="widget-title">网站运营不易，帮点一下广告</h3>
+                <div dangerouslySetInnerHTML={{ __html: ads_unit_html }}>
+                </div>
             </div>
         );
     }

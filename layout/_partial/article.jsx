@@ -30,7 +30,7 @@ module.exports = class extends Component {
                 </div>
                 <div className="article-inner">
                     <Gallery {...this.props} />
-                    {post.link || post.title ? <header className="article-header">
+                    {post.link || post.title ? <header className="article-header" style={index ? '' : 'text-align:center'}>
                         <Title {...this.props} className='article-title' />
                     </header> : null}
                     <div className="article-entry" itemprop="articleBody" dangerouslySetInnerHTML={{ __html: excerpt || post.content }}></div>
