@@ -9,12 +9,20 @@ $block-caption
   text-shadow: 0 1px #fff
   font-weight: bold
 
+$box
+  box-shadow: 0 4px 10px rgba(0,2,4,0.06),0 0 1px rgba(0,2,4,0.11)
+
 $block
-  background: color-block-background 
-  box-shadow: 1px 2px 3px #ddd
+  @extend $box
+  background: color-block-background
   border-top: 1px solid color-border
   border-left: 1px solid color-border
-  border-radius: 3px
+
+$widget-block
+  @extend $box
+  background: color-widget-background
+  border-top: 1px solid color-widget-border
+  border-left: 1px solid color-widget-border
 
 $base-style
   h1

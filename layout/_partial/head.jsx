@@ -65,6 +65,7 @@ module.exports = class extends Component {
             {theme.google_ads.enable ? <Fragment>
                 <script data-ad-client={theme.google_ads.ad_client} async src={theme.google_ads.js} crossorigin="anonymous"></script>
                 <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+                <script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/cm.js" async="async" defer="defer" ></script>
             </Fragment> : null}
             {theme.rss ? <link rel="alternate" href={url_for(theme.rss)} title={config.title} type="application/atom+xml" /> : null}
             {theme.favicon ? <link rel="icon" href={theme.favicon} /> : null}
