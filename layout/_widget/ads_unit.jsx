@@ -34,6 +34,16 @@ module.exports = class extends Component {
             });
         </script>
         `;
+        const baidu_ads3_html = `
+        <div class="_zsc4d6cmcv"></div>
+        <script type="text/javascript">
+            (window.slotbydup = window.slotbydup || []).push({
+                id: "u6643316",
+                container: "_zsc4d6cmcv",
+                async: true
+            });
+        </script>
+        `;
         return (
             <div className="widget-wrap">
                 <h3 className="widget-title">网站运营不易，帮点一下广告</h3>
@@ -43,6 +53,7 @@ module.exports = class extends Component {
                         <div dangerouslySetInnerHTML={{ __html: baidu_ads1_html }}></div>
                         <div dangerouslySetInnerHTML={{ __html: baidu_ads2_html }}></div>
                     </div>
+                    <div class="baidu_mb_ads" dangerouslySetInnerHTML={{ __html: baidu_ads3_html }}></div>
                 </div>
             </div>
         );
