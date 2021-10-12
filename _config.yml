@@ -43,7 +43,7 @@ archive_type: 'monthly'
 show_count: false
 
 # Miscellaneous
-google_analytics:
+google_analytics: true
 gauges_analytics:
 favicon: //www.hufeifei.cn/favicon.jpg
 twitter:
