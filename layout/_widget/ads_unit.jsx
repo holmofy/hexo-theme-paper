@@ -14,36 +14,6 @@ module.exports = class extends Component {
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
         `;
-        const baidu_ads1_html = `
-        <div class="_bn9kdav364r"></div>
-        <script type="text/javascript">
-            (window.slotbydup = window.slotbydup || []).push({
-                id: "u6642600",
-                container: "_bn9kdav364r",
-                async: true
-            });
-        </script>
-        `;
-        const baidu_ads2_html = `
-        <div class="_8on40jtwn76"></div>
-        <script type="text/javascript">
-            (window.slotbydup = window.slotbydup || []).push({
-                id: "u6643251",
-                container: "_8on40jtwn76",
-                async: true
-            });
-        </script>
-        `;
-        const baidu_ads3_html = `
-        <div class="_zsc4d6cmcv"></div>
-        <script type="text/javascript">
-            (window.slotbydup = window.slotbydup || []).push({
-                id: "u6643316",
-                container: "_zsc4d6cmcv",
-                async: true
-            });
-        </script>
-        `;
         const google_ads2_html = `
         <ins class="adsbygoogle"
             style="display:block"
@@ -60,11 +30,6 @@ module.exports = class extends Component {
                 <h3 className="widget-title">网站运营不易，帮点一下广告</h3>
                 <div class="ads-wrapper">
                     <div class="google_ads" dangerouslySetInnerHTML={{ __html: google_ads1_html }}></div>
-                    <div class="baidu_ads">
-                        <div dangerouslySetInnerHTML={{ __html: baidu_ads1_html }}></div>
-                        <div dangerouslySetInnerHTML={{ __html: baidu_ads2_html }}></div>
-                    </div>
-                    <div class="baidu_mb_ads" dangerouslySetInnerHTML={{ __html: baidu_ads3_html }}></div>
                     <div class="google_ads" dangerouslySetInnerHTML={{ __html: google_ads2_html }}></div>
                 </div>
             </div>
