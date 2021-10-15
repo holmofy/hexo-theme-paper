@@ -77,6 +77,9 @@ module.exports = class extends Component {
             {theme.vendors.other_css ? theme.vendors.other_css.map(url => <link href={url} rel="stylesheet" type="text/css" />) : null}
             <link rel="stylesheet" href={theme.vendors.fontawesome} rel="stylesheet" type="text/css" />
             <link rel="stylesheet" href={url_for('/css/style.css')} />
+            <link rel="dns-prefetch" href="//static.zhimg.com"></link>
+            <link rel="dns-prefetch" href="//at.alicdn.com"></link>
+            <link rel="dns-prefetch" href="//cdn.jsdelivr.net"></link>
         </head>;
     }
 }
