@@ -80,6 +80,8 @@ module.exports = class extends Component {
             <link rel="dns-prefetch" href="//static.zhimg.com"></link>
             <link rel="dns-prefetch" href="//at.alicdn.com"></link>
             <link rel="dns-prefetch" href="//cdn.jsdelivr.net"></link>
+            <link rel="dns-prefetch" href="//img-blog.csdn.net"></link>
+            <link rel="dns-prefetch" href="//img-blog.csdnimg.cn"></link>
         </head>;
     }
 }
