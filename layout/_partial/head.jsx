@@ -5,10 +5,12 @@ const GoogleAnalytics = require('./google-analytics');
 
 module.exports = class extends Component {
     _getTitle() {
-        const { page, __, is_archive, is_month, is_year, is_category, is_tag } = this.props;
+        const { page, config, __, is_home, is_archive, is_month, is_year, is_category, is_tag } = this.props;
         let title = page.title;
 
-        if (is_archive()) {
+        if (is_home()) {
+            title = config.description;
+        } else if (is_archive()) {
             title = __('archive_a');
 
             if (is_month()) {
