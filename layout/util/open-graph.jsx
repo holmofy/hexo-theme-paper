@@ -30,6 +30,7 @@ module.exports = class extends Component {
             author,
             description,
             keywords,
+            tags,
             url,
             images,
             siteName,
@@ -54,8 +55,10 @@ module.exports = class extends Component {
         htmlTags.push(<meta property='og:title' content={title} />);
         htmlTags.push(<meta property='og:url' content={encodeURL(url)} />);
         htmlTags.push(<meta property='og:site_name' content={siteName} />);
+        htmlTags.push(<link rel="canonical" href={encodeURL(url)}></link>);
 
         if (description) {
+            htmlTags.push(<meta property='description' content={description} />);
             htmlTags.push(<meta property='og:description' content={description} />);
         }
 
@@ -96,16 +99,23 @@ module.exports = class extends Component {
             htmlTags.push(<meta property='article:author' content={author} />);
         }
 
-        if (keywords) {
-            if (typeof keywords === 'string') {
-                keywords = keywords.split(',');
+        if (tags) {
+            if (typeof tags === 'string') {
+                tags = tags.split(',');
             }
 
-            keywords.map(tag => {
+            tags.map(tag => {
                 return tag.name ? tag.name : tag;
             }).filter(Boolean).forEach(keyword => {
                 htmlTags.push(<meta property='article:tag' content={keyword} />);
             });
+        }
+
+        if (keywords) {
+            if (typeof keywords !== 'string') {
+                keywords = keywords.join(',');
+            }
+            htmlTags.push(<meta property='keywords' content={keywords} />);
         }
 
         htmlTags.push(<meta property='twitter:card' content={twitterCard || 'summary'} />);

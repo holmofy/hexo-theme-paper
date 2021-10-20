@@ -5,10 +5,12 @@ const GoogleAnalytics = require('./google-analytics');
 
 module.exports = class extends Component {
     _getTitle() {
-        const { page, __, is_archive, is_month, is_year, is_category, is_tag } = this.props;
+        const { page, config, __, is_home, is_archive, is_month, is_year, is_category, is_tag } = this.props;
         let title = page.title;
 
-        if (is_archive()) {
+        if (is_home()) {
+            title = config.description;
+        } else if (is_archive()) {
             title = __('archive_a');
 
             if (is_month()) {
@@ -51,7 +53,8 @@ module.exports = class extends Component {
                 updated={page.updated}
                 author={config.author}
                 description={page.description || page.excerpt || page.content || config.description}
-                keywords={page.keywords || (page.tags && page.tags.length ? page.tags : undefined) || config.keywords}
+                tags={page.keywords || (page.tags && page.tags.length ? page.tags : undefined) || config.keywords}
+                keywords={page.keywords}
                 url={url}
                 images={page.photos || images}
                 siteName={config.title}
@@ -74,6 +77,11 @@ module.exports = class extends Component {
             {theme.vendors.other_css ? theme.vendors.other_css.map(url => <link href={url} rel="stylesheet" type="text/css" />) : null}
             <link rel="stylesheet" href={theme.vendors.fontawesome} rel="stylesheet" type="text/css" />
             <link rel="stylesheet" href={url_for('/css/style.css')} />
+            <link rel="dns-prefetch" href="//static.zhimg.com"></link>
+            <link rel="dns-prefetch" href="//at.alicdn.com"></link>
+            <link rel="dns-prefetch" href="//cdn.jsdelivr.net"></link>
+            <link rel="dns-prefetch" href="//img-blog.csdn.net"></link>
+            <link rel="dns-prefetch" href="//img-blog.csdnimg.cn"></link>
         </head>;
     }
 }
