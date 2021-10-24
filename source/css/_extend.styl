@@ -9,8 +9,12 @@ $block-caption
   text-shadow: 0 1px #fff
   font-weight: bold
 
-$box
+$shadow
   box-shadow: 0 4px 10px rgba(0,2,4,0.06),0 0 1px rgba(0,2,4,0.11)
+
+$box
+  @extend $shadow
+  border-radius: 8px
 
 $block
   @extend $box
