@@ -1,8 +1,10 @@
 # Header
 menu:
-  Home: //www.hufeifei.cn
-  Blog: /
-  Archives: /archives
+  主页: //www.hufeifei.cn
+  博客: /
+  归档: /archives
+  算法: //algo.hufeifei.cn
+  书籍: /book
   Github: /github
 rss: /atom.xml
 

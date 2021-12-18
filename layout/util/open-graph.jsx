@@ -59,6 +59,7 @@ module.exports = class extends Component {
 
         if (description) {
             htmlTags.push(<meta property='description' content={description} />);
+            htmlTags.push(<meta name='description' content={description} />);
             htmlTags.push(<meta property='og:description' content={description} />);
         }
 
