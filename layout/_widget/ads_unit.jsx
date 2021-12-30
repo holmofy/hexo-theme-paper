@@ -30,7 +30,7 @@ module.exports = class extends Component {
                 <h3 className="widget-title">网站运营不易</h3>
                 <div class="ads-wrapper">
                     <div class="google_ads" dangerouslySetInnerHTML={{ __html: google_ads1_html }}></div>
-                    <div class="google_ads" dangerouslySetInnerHTML={{ __html: google_ads2_html }}></div>
+                    {/* <div class="google_ads" dangerouslySetInnerHTML={{ __html: google_ads2_html }}></div> */}
                 </div>
             </div>
         );
