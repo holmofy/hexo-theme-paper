@@ -52,17 +52,14 @@ twitter:
 fb_admins:
 fb_app_id:
 
-# valine comment system. https://valine.js.org
-valine:
+# waline comment system. https://waline.js.org
+waline:
   enable: true
-  appId: k4h2NOzejej3AQBaWv37YuSJ-gzGzoHsz
-  appKey: RjLaLuXtqwJ6OArmcdYse9rk 
-  notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
-  verify: false # valine verify code (true/false)
+  serverURL: 'https://blog-waline-psi.vercel.app/'
+  avatar: 'mp'
   pageSize: 10 # comment list page size
-  avatar: mm # gravatar style https://valine.js.org/#/avatar
   lang: zh-cn # i18n: zh-cn/en
-  placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
+  placeholder: Just go go
   visitor: true
   recordIP: true
   requiredFields: ['nick']
@@ -86,8 +83,8 @@ vendors:
   # FontAwesome
   fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css
 
-  # valine
-  valine: //cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js
+  # waline
+  waline: //cdn.jsdelivr.net/npm/@waline/client
 
   other_css:
     - //at.alicdn.com/t/font_841402_efkj8jo1xld.css

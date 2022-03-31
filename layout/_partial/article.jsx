@@ -62,7 +62,7 @@ module.exports = class extends Component {
                 </div> : null}
                 {!index ? <Nav {...this.props} /> : null}
             </article>
-            {!index && theme.valine.enable ? <div id="valine-comments"></div> : null}
+            {!index && theme.waline.enable ? <div id="waline-comments"></div> : null}
         </Fragment>
     }
 }
