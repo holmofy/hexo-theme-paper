@@ -54,7 +54,7 @@ fb_app_id:
 
 # waline comment system. https://waline.js.org
 waline:
-  enable: true
+  enable: false
   serverURL: 'https://blog-waline-psi.vercel.app/'
   avatar: 'mp'
   pageSize: 10 # comment list page size
