@@ -12,16 +12,13 @@ module.exports = class extends Component {
         gtag('config', 'G-H58NSPXYPF');
         `;
         const baidu_script = `
-        <script>
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?b3392fb5f6d65fb10354f590338d1ee4";
-          var s = document.getElementsByTagName("script")[0]; 
-          s.parentNode.insertBefore(hm, s);
-        })();
-        </script>        
-        `;
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?b3392fb5f6d65fb10354f590338d1ee4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();`;
         const msScript = `
             (function(c,l,a,r,i,t,y){
                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
