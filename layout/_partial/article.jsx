@@ -6,6 +6,7 @@ const Gallery = require('./post/gallery');
 const Title = require('./post/title');
 const Tag = require('./post/tag');
 const Nav = require('./post/nav');
+const Waline = require('./waline');
 
 module.exports = class extends Component {
     render() {
@@ -62,7 +63,10 @@ module.exports = class extends Component {
                 </div> : null}
                 {!index ? <Nav {...this.props} /> : null}
             </article>
-            {!index && theme.waline.enable ? <div id="waline-comments"></div> : null}
+            {!index && theme.waline.enable ? <Fragment>
+                <div id="waline-comments"></div>
+                <Waline {...this.props} index={false}/>
+                </Fragment> : null}
         </Fragment>
     }
 }
