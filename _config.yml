@@ -88,7 +88,7 @@ vendors:
   fontawesome: //cdnjs.loli.net/ajax/libs/font-awesome/5.15.3/css/all.min.css
 
   # waline
-  waline: //cdn.jsdelivr.net/npm/@waline/client
+  waline: //unpkg.com/@waline/client@v3/dist/waline.css
 
   other_css:
     - //at.alicdn.com/t/font_841402_efkj8jo1xld.css
