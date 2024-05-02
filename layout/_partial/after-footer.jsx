@@ -8,7 +8,7 @@ module.exports = class extends Component {
         const { index, theme, url_for } = this.props;
         const { vendors, waline } = theme;
         const jquerySrc = vendors.jquery ? vendors.jquery : url_for('/js/jquery-3.4.1.min.js');
-        const walineJS = `import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';init(${JSON.stringify({ el: '#waline-comments', ...waline})});`;
+        const walineJS = `import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';init(${JSON.stringify({ el:'#waline-comments',pageview:true,update:!index, ...waline})});`;
         return <Fragment>
             <script src={jquerySrc}></script>
             {!index && waline.enable ? <script type="module" dangerouslySetInnerHTML={{__html:walineJS}}></script> : null}
