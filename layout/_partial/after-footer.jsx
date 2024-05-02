@@ -5,7 +5,8 @@ const Fancybox = require('./fancybox');
 
 module.exports = class extends Component {
     render() {
-        const { url_for } = this.props;
+        const { url_for, theme } = this.props;
+        const { vendors }= theme;
         const jquerySrc = vendors.jquery ? vendors.jquery : url_for('/js/jquery-3.4.1.min.js');
         return <Fragment>
             <script src={jquerySrc}></script>
