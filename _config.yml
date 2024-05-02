@@ -55,7 +55,7 @@ fb_app_id:
 # waline comment system. https://waline.js.org
 waline:
   enable: true
-  serverURL: 'https://blog-waline-psi.vercel.app'
+  serverURL: 'https://api.waline.blog.hufeifei.cn'
   avatar: 'mp'
   pageSize: 10 # comment list page size
   lang: zh-cn # i18n: zh-cn/en
