@@ -2,6 +2,7 @@ const { Component, Fragment } = require('inferno');
 
 const Article = require('./article');
 const ArchivePost = require('./archive-post');
+const Waline = require('./waline');
 
 module.exports = class extends Component {
     render() {
@@ -56,6 +57,7 @@ module.exports = class extends Component {
         return <Fragment>
             {content}
             {nav}
+            <Waline {...this.props} index={true}/>
         </Fragment>;
     }
 }
