@@ -25,7 +25,7 @@ module.exports = class extends Component {
                     <Category {...this.props} />
                     <div id={url_for(post.path)} class="article-views leancloud_visitors" data-flag-title={post.title} title={__('post.views')}>
                         <i class="fas fa-eye"></i>
-                        <span class="leancloud-visitors-count"></span>
+                        <span class="waline-pageview-count" data-path={url_for(post.path)} ></span>
                     </div>
                 </div>
                 <div className="article-inner">
