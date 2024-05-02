@@ -70,13 +70,13 @@ module.exports = class extends Component {
                 <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
                 <script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/cm.js" async="async" defer="defer" ></script>
             </Fragment> : null}
-            {theme.rss ? <link rel="alternate" href={url_for(theme.rss)} title={config.title} type="application/atom+xml" /> : null}
-            {theme.favicon ? <link rel="icon" href={theme.favicon} /> : null}
-            {config.highlight.enable ? <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css" /> : null}
-            {theme.waline.enable ? <link src={theme.vendors.waline} rel="stylesheet" type="text/css" /> : null}
-            {theme.vendors.other_css ? theme.vendors.other_css.map(url => <link href={url} rel="stylesheet" type="text/css" />) : null}
-            <link rel="stylesheet" href={theme.vendors.fontawesome} rel="stylesheet" type="text/css" />
-            <link rel="stylesheet" href={url_for('/css/style.css')} />
+            {theme.rss ? <link rel="alternate" href={url_for(theme.rss)} title={config.title} type="application/atom+xml"></link> : null}
+            {theme.favicon ? <link rel="icon" href={theme.favicon}></link> : null}
+            {config.highlight.enable ? <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css"></link> : null}
+            {theme.waline.enable ? <link src={theme.vendors.waline} rel="stylesheet" type="text/css"></link> : null}
+            {theme.vendors.other_css ? theme.vendors.other_css.map(url => <link href={url} rel="stylesheet" type="text/css"></link>) : null}
+            <link rel="stylesheet" href={theme.vendors.fontawesome} rel="stylesheet" type="text/css"></link>
+            <link rel="stylesheet" href={url_for('/css/style.css')}></link>
             <link rel="dns-prefetch" href="//static.zhimg.com"></link>
             <link rel="dns-prefetch" href="//at.alicdn.com"></link>
             <link rel="dns-prefetch" href="//cdn.jsdelivr.net"></link>
