@@ -5,8 +5,8 @@ menu:
   归档: /archives
   算法: //algo.hufeifei.cn
   书籍: /book
-  Github: /github
 rss: /atom.xml
+github: /github
 
 # Content
 excerpt_link: Read More
