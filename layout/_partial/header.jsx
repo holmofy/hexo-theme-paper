@@ -17,7 +17,7 @@ class Header extends Component {
                             })}
                         </nav>
                         <nav id="sub-nav">
-                            {theme.github ? <a id="nav-github-link" className="nav-icon" href={url_for(theme.github)} title="Github"><i class="fas fa-github" /></a> : null}
+                            {theme.github ? <a id="nav-github-link" className="nav-icon" href={url_for(theme.github)} title="Github"><i class="fab fa-github" /></a> : null}
                             {theme.rss ? <a id="nav-rss-link" className="nav-icon" href={url_for(theme.rss)} title={__('rss_feed')}><i class="fa fa-rss" /></a> : null}
                             <a id="nav-search-btn" className="nav-icon" title={__('search')}><i class="fas fa-search" /></a>
                         </nav>
