@@ -17,7 +17,7 @@ recent_posts_limits: 5
 sidebar: right
 widgets:
 - wechat
-- category
+#- category
 #- tag
 - tagcloud
 # - archive
