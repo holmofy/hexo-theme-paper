@@ -19,5 +19,8 @@
   },
   "peerDependencies": {
     "chai": "^0.1.0"
+  },
+  "dependencies": {
+    "swiper": "^11.2.8"
   }
 }

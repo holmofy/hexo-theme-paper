@@ -17,7 +17,8 @@ recent_posts_limits: 5
 sidebar: right
 widgets:
 - wechat
-#- category
+- tecent_ads
+- category
 #- tag
 - tagcloud
 # - archive
@@ -92,3 +93,66 @@ vendors:
 
   other_css:
     - //at.alicdn.com/t/font_841402_efkj8jo1xld.css
+
+ads:
+  enabled: true
+  # https://swiperjs.com/swiper-api
+  swiper_options:
+    slidesPerView: 1
+    spaceBetween: 10
+    loop: true
+    autoplay:
+      delay: 2500
+      disableOnInteraction: false
+  assets:
+    - title: 买云服务器，参与礼品兑换、抽奖，最高送价值8000元IPad，还有Bose耳机、千元京东卡等您来！
+      url: https://curl.qcloud.com/gze2lfYy
+      img: https://upload-dianshi-1255598498.file.myqcloud.com/%E4%BC%81%E4%B8%9A%E7%9B%9B%E5%A4%8F%E6%9C%89%E7%A4%BC-345x200-d2146292109c1c9e1ae000a6c3ecde162d89e493.jpg
+    - title: DNSPod解析套餐全面升配降价，更高的套餐配置规格，更优的价格方案，全面提升可用性及响应率，专业版限时99元/年！
+      url: https://curl.qcloud.com/LonPwhxX
+      img: https://upload-dianshi-1255598498.file.myqcloud.com/345x200%E9%8D%93%EE%88%9B%E6%B9%B0-82de69db27c1e7984b871bdba4ea3dd5d5acda1f.jpg
+    - title: 云产品限时秒杀，爆款1核2G云服务器，首年74元
+      url: https://curl.qcloud.com/7ec01pIF
+      img: https://upload-dianshi-1255598498.file.myqcloud.com/345-200-788d0ee3eed06e913b85ddb6b178f8b9960c4684.jpg
+    - title: 境外1核2G服务器低至2折，半价续费券限量免费领取！
+      url: https://curl.qcloud.com/95DUQ4ON
+      img: https://upload-dianshi-1255598498.file.myqcloud.com/%E5%85%A8%E7%90%83%E8%B4%AD_345%20200-dd004d4a4191fcbabcabea4fcd96f67d1e069f58.jpg
+    - title: 星星海SA2云服务器，1核2G首年99元起，高性价比首选
+      url: https://curl.qcloud.com/SAIuJMWI
+      img: https://upload-dianshi-1255598498.file.myqcloud.com/345x200%20%281%29-87905a297b9ba92f411e1e8fefc629b63cca5781.png
+    - title: 推广者专属福利，新客户无门槛领取总价值高达2860元代金券，每种代金券限量500张，先到先得。
+      url: https://curl.qcloud.com/3YMiCK6w
+      img: https://upload-dianshi-1255598498.file.myqcloud.com/345x200--2953d058277cb63c6b1cd127285163335cd6751e.jpg
+    - title: 中小企业福利专场，多款刚需产品，满足企业通用场景需求，云服务器2.5折起
+      url: https://curl.qcloud.com/qbSzF0sM
+      img: https://upload-dianshi-1255598498.file.myqcloud.com/345-200-b28f7dee9552f4241ea6a543f15a9798049701d4.jpg
+    - title: 云开发CloudBase，一站式高效开发平台，新用户选购低至0元
+      url: https://curl.qcloud.com/H6YmBFC4
+      img: https://upload-dianshi-1255598498.file.myqcloud.com/345-200-a1b026a76d4ef2fc73b9fd976759da3a16715b44.jpg
+    - title: ElasticSearch新用户特惠，快速实现日志分析、应用搜索，首购低至4折
+      url: https://curl.qcloud.com/hDCEkRsS
+      img: https://upload-dianshi-1255598498.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%913_345%20200_1-7aeb8eb451fd6de33676444898914b1ff3298996.jpg
+    - title: 腾讯云数据库性能卓越稳定可靠，为您解决数据库运维难题
+      url: https://curl.qcloud.com/YjfBwRLm
+      img: https://upload-dianshi-1255598498.file.myqcloud.com/%E5%85%A5%E9%97%A8%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93MYSQL-345x200-a68c566987f9bf687433e2cf4fbdc85ece6e2d93.jpg
+    - title: 腾讯云图，像PPT一样简单的数据可视化工具。5元搞定数据可视化，模板丰富，拖拖拽拽就能做出好看的可视化大屏。
+      url: https://curl.qcloud.com/SDMIWAoV
+      img: https://upload-dianshi-1255598498.file.myqcloud.com/345x200-89eeba55a2f49008e686e1a51e14bfe79f63af13.png
+    - title: 视频通信爆款 9.9 元起， 提供电商、教育、社交娱乐等多行业多场景的一站式解决方案，最快 1 天布局火爆赛道
+      url: https://curl.qcloud.com/8DvMAlwF
+      img: https://upload-dianshi-1255598498.file.myqcloud.com/345_200-51cc0ac5a1b375c4269c679987e3bc7c62a2c592.png
+    - title: 即时通信 IM 首购 1 折特惠，仅需99.9元/月，支持直播电商、在线教育等多种热门应用场景
+      url: https://curl.qcloud.com/VbUAuJ2j
+      img: https://upload-dianshi-1255598498.file.myqcloud.com/345_200%E5%A4%87%E4%BB%BD-15e14b2502f1e6df9e647ba452416d4a4f3dda04.png
+    - title: 9.9元体验2万分钟实时音视频通话,支持1对1或多人音视频通话,单房可支持300人同时在线，10万人同时观看；全平台互通高品质通话
+      url: https://curl.qcloud.com/6HS1Q41a
+      img: https://upload-dianshi-1255598498.file.myqcloud.com/345_200%E5%A4%87%E4%BB%BD%202-15a05a841743ffd2dc01731972dd7b3c2b46e357.png
+    - title: 云数据库MySQL基础版1元体验，为中小企业量身打造，单节点架构，保证数据可靠性
+      url: https://curl.qcloud.com/Z3HKwaYY
+      img: https://upload-dianshi-1255598498.file.myqcloud.com/%E6%95%B0%E6%8D%AE%E5%BA%93%20SQL%20345x200-0f7c36787bd045c5a201bc29b01deab00bb4a3cd.jpg
+    - title: 专业版APP加固特惠5折起，可享免费兼容性测试
+      url: https://curl.qcloud.com/pcReLJBk
+      img: https://upload-dianshi-1255598498.file.myqcloud.com/345x200-5d6e2cf6805432934eeb9f7800bd1a5d282906ae.jpg
+    - title: 新客户首购 TPNS 特惠9.8元/万 DAU，新老客户低至6.5折，给您提供快速、稳定、安全、高效的用户促活利器
+      url: https://curl.qcloud.com/xwWYC6oW
+      img: https://upload-dianshi-1255598498.file.myqcloud.com/345_200%E5%A4%87%E4%BB%BD%203-9f78293b201220263799ac53f85ae6cd13e0e8a7.png
