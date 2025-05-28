@@ -1,6 +1,4 @@
 const { Component } = require('inferno');
-import Swiper from 'swiper';
-import 'swiper/swiper-bundle.css';
 
 module.exports = class extends Component {
     componentDidMount() {
@@ -24,6 +22,21 @@ module.exports = class extends Component {
         if (!ads.enabled || ads.assets.length === 0) {
             return null;
         }
+        let options = JSON.stringify(Object.assign({
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar"
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        }, theme.ads.swiper_options));
+        let scripts = `
+            window.addEventListener('load', function () {
+                var swiper = new Swiper(".ads-banner", ${options});
+            }, false);
+        `;
         return (
             <div className="widget-wrap ads-banner">
                 <div class="swiper-wrapper">
@@ -37,6 +50,7 @@ module.exports = class extends Component {
                 <div aria-label="Previous" class="swiper-button-prev"></div>
                 <div aria-label="Next" class="swiper-button-next"></div>
                 <div class="swiper-pagination"></div>
+                <script dangerouslySetInnerHTML={{ __html: scripts }}></script>
             </div>
         );
     }
