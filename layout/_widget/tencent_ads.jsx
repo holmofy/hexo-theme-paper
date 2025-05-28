@@ -1,21 +1,6 @@
 const { Component } = require('inferno');
 
 module.exports = class extends Component {
-    componentDidMount() {
-        const { theme = { ads: {} } } = this.props;
-        let opts = Object.assign({
-            pagination: {
-                el: ".swiper-pagination",
-                type: "progressbar"
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            }
-        }, theme.ads.swiper_options);
-        this.swiper = new Swiper('.ads-banner', opts);
-    }
-
     render() {
         const { theme = { ads: {} } } = this.props;
         let { ads = { enabled: false, assets: [] } } = theme;
