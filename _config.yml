@@ -84,6 +84,9 @@ vendors:
   # fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
   fancybox_css: //cdnjs.loli.net/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css
 
+  swiper: //cdn.bootcdn.net/ajax/libs/Swiper/11.0.5/swiper-bundle.js
+  swiper_css: //cdn.bootcdn.net/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css
+
   # FontAwesome
   #fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css
   fontawesome: //cdnjs.loli.net/ajax/libs/font-awesome/5.15.3/css/all.min.css

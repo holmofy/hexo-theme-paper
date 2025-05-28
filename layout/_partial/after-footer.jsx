@@ -12,6 +12,7 @@ module.exports = class extends Component {
             <script src={jquerySrc}></script>
             <Fancybox {...this.props} />
             <script type="text/javascript" src={url_for('/js/script.js')}></script>
+            {theme.vendors.swiper ? <script type="text/javascript" src={theme.vendors.swiper}></script> : null}
             <GaugesAnalytics {...this.props} />
         </Fragment>;
     }

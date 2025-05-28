@@ -74,8 +74,9 @@ module.exports = class extends Component {
             {theme.favicon ? <link rel="icon" href={theme.favicon}></link> : null}
             {config.highlight.enable ? <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css"></link> : null}
             {theme.waline.enable ? <link href={theme.vendors.waline} rel="stylesheet" type="text/css"></link> : null}
+            {theme.vendors.swiper_css ? <link href={theme.vendors.swiper_css} rel="stylesheet" type="text/css"></link> : null}
             {theme.vendors.other_css ? theme.vendors.other_css.map(url => <link href={url} rel="stylesheet" type="text/css"></link>) : null}
-            <link rel="stylesheet" href={theme.vendors.fontawesome} rel="stylesheet" type="text/css"></link>
+            <link rel="stylesheet" href={theme.vendors.fontawesome} type="text/css"></link>
             <link rel="stylesheet" href={url_for('/css/style.css')}></link>
             <link rel="dns-prefetch" href="//static.zhimg.com"></link>
             <link rel="dns-prefetch" href="//at.alicdn.com"></link>
