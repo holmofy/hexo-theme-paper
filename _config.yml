@@ -108,6 +108,12 @@ ads:
       delay: 2500
       disableOnInteraction: false
   assets:
+    - title: 【腾讯云】云服务器、云数据库、COS、CDN、短信等云产品特惠热卖中
+      url: https://curl.qcloud.com/8E3CrC3m
+      img: https://dscache.tencent-cloud.cn/upload//345_200-013e419e2b86ff48a531fabce2694bd3bb27f844.png
+    - title: 【腾讯云】Lighthouse助力跨境电商业务扬帆出海
+      url: https://curl.qcloud.com/wVGSgyE8
+      img: https://dscache.tencent-cloud.cn/upload//rhino-design-345x200-4c873fb0a9753759ae4932e2e1e212715fa7f06b.png
     - title: 买云服务器，参与礼品兑换、抽奖，最高送价值8000元IPad，还有Bose耳机、千元京东卡等您来！
       url: https://curl.qcloud.com/gze2lfYy
       img: https://upload-dianshi-1255598498.file.myqcloud.com/%E4%BC%81%E4%B8%9A%E7%9B%9B%E5%A4%8F%E6%9C%89%E7%A4%BC-345x200-d2146292109c1c9e1ae000a6c3ecde162d89e493.jpg
@@ -117,21 +123,9 @@ ads:
     - title: 云产品限时秒杀，爆款1核2G云服务器，首年74元
       url: https://curl.qcloud.com/7ec01pIF
       img: https://upload-dianshi-1255598498.file.myqcloud.com/345-200-788d0ee3eed06e913b85ddb6b178f8b9960c4684.jpg
-    - title: 境外1核2G服务器低至2折，半价续费券限量免费领取！
-      url: https://curl.qcloud.com/95DUQ4ON
-      img: https://upload-dianshi-1255598498.file.myqcloud.com/%E5%85%A8%E7%90%83%E8%B4%AD_345%20200-dd004d4a4191fcbabcabea4fcd96f67d1e069f58.jpg
-    - title: 星星海SA2云服务器，1核2G首年99元起，高性价比首选
-      url: https://curl.qcloud.com/SAIuJMWI
-      img: https://upload-dianshi-1255598498.file.myqcloud.com/345x200%20%281%29-87905a297b9ba92f411e1e8fefc629b63cca5781.png
-    - title: 推广者专属福利，新客户无门槛领取总价值高达2860元代金券，每种代金券限量500张，先到先得。
-      url: https://curl.qcloud.com/3YMiCK6w
-      img: https://upload-dianshi-1255598498.file.myqcloud.com/345x200--2953d058277cb63c6b1cd127285163335cd6751e.jpg
     - title: 中小企业福利专场，多款刚需产品，满足企业通用场景需求，云服务器2.5折起
       url: https://curl.qcloud.com/qbSzF0sM
       img: https://upload-dianshi-1255598498.file.myqcloud.com/345-200-b28f7dee9552f4241ea6a543f15a9798049701d4.jpg
-    - title: 云开发CloudBase，一站式高效开发平台，新用户选购低至0元
-      url: https://curl.qcloud.com/H6YmBFC4
-      img: https://upload-dianshi-1255598498.file.myqcloud.com/345-200-a1b026a76d4ef2fc73b9fd976759da3a16715b44.jpg
     - title: ElasticSearch新用户特惠，快速实现日志分析、应用搜索，首购低至4折
       url: https://curl.qcloud.com/hDCEkRsS
       img: https://upload-dianshi-1255598498.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%913_345%20200_1-7aeb8eb451fd6de33676444898914b1ff3298996.jpg
@@ -150,9 +144,6 @@ ads:
     - title: 9.9元体验2万分钟实时音视频通话,支持1对1或多人音视频通话,单房可支持300人同时在线，10万人同时观看；全平台互通高品质通话
       url: https://curl.qcloud.com/6HS1Q41a
       img: https://upload-dianshi-1255598498.file.myqcloud.com/345_200%E5%A4%87%E4%BB%BD%202-15a05a841743ffd2dc01731972dd7b3c2b46e357.png
-    - title: 云数据库MySQL基础版1元体验，为中小企业量身打造，单节点架构，保证数据可靠性
-      url: https://curl.qcloud.com/Z3HKwaYY
-      img: https://upload-dianshi-1255598498.file.myqcloud.com/%E6%95%B0%E6%8D%AE%E5%BA%93%20SQL%20345x200-0f7c36787bd045c5a201bc29b01deab00bb4a3cd.jpg
     - title: 专业版APP加固特惠5折起，可享免费兼容性测试
       url: https://curl.qcloud.com/pcReLJBk
       img: https://upload-dianshi-1255598498.file.myqcloud.com/345x200-5d6e2cf6805432934eeb9f7800bd1a5d282906ae.jpg
