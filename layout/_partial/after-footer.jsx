@@ -14,10 +14,10 @@ module.exports = class extends Component {
             <script type="text/javascript" src={url_for('/js/script.js')}></script>
             {theme.vendors.swiper ? <script type="text/javascript" src={theme.vendors.swiper}></script> : null}
             {theme.mermaid?.enable ? <>
-              <script src='https://unpkg.com/mermaid@{theme.mermaid?.version}}/dist/mermaid.min.js'></script>
+              <script src='https://unpkg.com/mermaid@11.12.0/dist/mermaid.core.mjs'></script>
               <script>
                 if (window.mermaid) {
-                  mermaid.initialize({JSON.stringify(theme.mermaid?.options)});
+                  mermaid.initialize();
                 }
               </script>
             </> : null}
