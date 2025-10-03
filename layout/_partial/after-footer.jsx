@@ -13,6 +13,14 @@ module.exports = class extends Component {
             <Fancybox {...this.props} />
             <script type="text/javascript" src={url_for('/js/script.js')}></script>
             {theme.vendors.swiper ? <script type="text/javascript" src={theme.vendors.swiper}></script> : null}
+            {theme.mermaid?.enable ? <>
+              <script src='https://unpkg.com/mermaid@{theme.mermaid?.version}}/dist/mermaid.min.js'></script>
+              <script>
+                if (window.mermaid) {
+                  mermaid.initialize({JSON.stringify(theme.mermaid?.options)});
+                }
+              </script>
+            </> : null}
             <GaugesAnalytics {...this.props} />
         </Fragment>;
     }
