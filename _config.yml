@@ -97,7 +97,7 @@ vendors:
   # waline
   waline: //unpkg.com/@waline/client@v3/dist/waline.css
 
-  mermaid: //unpkg.com/mermaid@11.12.0/dist/mermaid.core.mjs
+  mermaid: //unpkg.com/mermaid@11.12.0/dist/mermaid.min.js
 
   other_css:
     - //at.alicdn.com/t/font_841402_efkj8jo1xld.css
