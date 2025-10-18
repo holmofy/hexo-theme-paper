@@ -75,6 +75,9 @@ reward:
   alipay: https://www.hufeifei.cn/reward-img/alipay.jpg
   wechat: https://www.hufeifei.cn/reward-img/wechat.jpg
 
+mermaid:
+  enable: true
+
 vendors: 
   # FancyBox
   # jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
@@ -93,6 +96,8 @@ vendors:
 
   # waline
   waline: //unpkg.com/@waline/client@v3/dist/waline.css
+
+  mermaid: //unpkg.com/mermaid@11.12.0/dist/mermaid.core.mjs
 
   other_css:
     - //at.alicdn.com/t/font_841402_efkj8jo1xld.css

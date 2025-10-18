@@ -14,8 +14,8 @@ module.exports = class extends Component {
             <script type="text/javascript" src={url_for('/js/script.js')}></script>
             {theme.vendors.swiper ? <script type="text/javascript" src={theme.vendors.swiper}></script> : null}
             {theme.mermaid?.enable ? <>
-              <script src='https://unpkg.com/mermaid@11.12.0/dist/mermaid.core.mjs'></script>
-              <script>if (window.mermaid)  mermaid.initialize();</script>
+                <script src={vendors.mermaid}></script>
+                <script>if (window.mermaid)  mermaid.initialize();</script>
             </> : null}
             <GaugesAnalytics {...this.props} />
         </Fragment>;
